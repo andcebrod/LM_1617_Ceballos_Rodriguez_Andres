@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="shiporder">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="orderperson" minOccurs="1" maxOccurs="1"></xsd:element>
+                <xsd:element ref="shipto" minOccurs="1" maxOccurs="1"></xsd:element>
+                <xsd:element ref="item" minOccurs="1" maxOccurs="unbounded"></xsd:element>
+            </xsd:sequence>
+            <xsd:attribute name="orderid" type="xsd:decimal" use="required"></xsd:attribute>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="orderperson" type="xsd:string"></xsd:element>
+    <xsd:element name="shipto">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="name" minOccurs="1" maxOccurs="1"></xsd:element>
+                <xsd:element ref="address" minOccurs="1" maxOccurs="1"></xsd:element>
+                <xsd:element ref="city" minOccurs="1" maxOccurs="1"></xsd:element>
+                <xsd:element ref="country" minOccurs="1" maxOccurs="1"></xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="name" type="xsd:string"></xsd:element>
+    <xsd:element name="address" type="xsd:string"></xsd:element>
+    <xsd:element name="city" type="xsd:string"></xsd:element>
+    <xsd:element name="country" type="xsd:string"></xsd:element>
+    <xsd:element name="item">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="tittle" minOccurs="1" maxOccurs="unbounded"></xsd:element>
+                <xsd:element ref="note" minOccurs="0" maxOccurs="1"></xsd:element>
+                <xsd:element ref="quantity" minOccurs="1" maxOccurs="unbounded"></xsd:element>
+                <xsd:element ref="price" minOccurs="1" maxOccurs="unbounded"></xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="tittle" type="xsd:string"></xsd:element>
+    <xsd:element name="note" type="xsd:string"></xsd:element>
+    <xsd:element name="quantity" type="xsd:decimal"></xsd:element>
+    <xsd:element name="price" type="xsd:decimal"></xsd:element>
+</xsd:schema>

@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<!DOCTYPE football-results[
+<!ELEMENT football-results (match+)>
+<!ELEMENT match (team+)>
+<!ATTLIST match
+result CDATA #REQUIRED
+schelude CDATA #REQUIRED>
+<!ELEMENT team (player+)>
+<!ATTLIST team
+name CDATA #REQUIRED
+situation CDATA #REQUIRED>
+<!ELEMENT player (number, name, score*, yellow-card*, red-card?)>
+<!ELEMENT number (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT score (#PCDATA)>
+<!ATTLIST score score-minute CDATA #REQUIRED>
+<!ELEMENT yellow-card (#PCDATA)>
+<!ELEMENT red-card (#PCDATA)>
+]>
+<football-results>
+ <match result="3-0" schelude="21:00">
+  <team name="Sevilla FC" situation="local">
+    <player>
+        <number>1</number>
+        <name>Sergio Rico</name>
+        <yellow-card>1</yellow-card>
+      </player>
+    <player>
+        <number>24</number>
+        <name>Gabriel Mercado</name>
+        <yellow-card>1</yellow-card>
+      </player>
+    <player>
+      <number>23</number>
+      <name>Adil Rami</name>
+    </player>
+    <player>
+      <number>3</number>
+      <name>Mariano Ferreira</name>
+    </player>
+    <player>
+      <number>18</number>
+      <name>Sergio Escudero</name>
+    </player>
+    <player>
+      <number>20</number>
+      <name>Vitolo</name>
+      <score score-minute="30">Yes</score>
+    </player>
+    <player>
+      <number>10</number>
+      <name>Samir Nasri</name>
+      <score score-minute="53">Yes</score>
+      <yellow-card>1</yellow-card>
+      </player>
+    <player>
+      <number>22</number>
+      <name>Franco Vazquez</name>
+      <yellow-card>1</yellow-card>
+    </player>
+    <player>
+      <number>8</number>
+      <name>Vicente Iborra</name>
+      <yellow-card>1</yellow-card>
+    </player>
+    <player>
+      <number>15</number>
+      <name>Steven Nzonzi</name>
+      <yellow-card>1</yellow-card>
+    </player>
+    <player>
+      <number>9</number>
+      <name>Luciano Vietto</name>
+      <score score-minute="80">Yes</score>
+    </player>
+  </team>
+  <team name="Real Betis Balompie" situation="visitant">
+    <player>
+      <number>13</number>
+      <name>Antonio Adan</name>
+    </player>
+    <player>
+      <number>4</number>
+      <name>Bruno Gonzalez</name>
+      <yellow-card>1</yellow-card>
+    </player>
+    <player>
+      <number>14</number>
+      <name>Riza Durmisi</name>
+      <yellow-card>1</yellow-card>
+    </player>
+    <player>
+      <number>12</number>
+      <name>Cristiano Piccini</name>
+    </player>
+    <player>
+      <number>3</number>
+      <name>Alex Martinez</name>
+      <yellow-card>1</yellow-card>
+    </player>
+    <player>
+      <number>5</number>
+      <name>Petros Matheus Dos Santos</name>
+      <red-card>1</red-card>
+    </player>
+    <player>
+      <number>22</number>
+      <name>Darko Brasanac</name>
+    </player>
+    <player>
+      <number>17</number>
+      <name>Joaquin Sanchez</name>
+    </player>
+    <player>
+      <number>7</number>
+      <name>Charly Musonda</name>
+    </player>
+    <player>
+      <number>10</number>
+      <name>Dani Ceballos</name>
+      <yellow-card>1</yellow-card>
+    </player>
+    <player>
+      <number>24</number>
+      <name>Ruben Castro</name>
+      <yellow-card>1</yellow-card>
+    </player>
+  </team>
+ </match>
+</football-results>
