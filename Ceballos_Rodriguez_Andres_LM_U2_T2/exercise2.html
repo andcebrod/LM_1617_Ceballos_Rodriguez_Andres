@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Exercise 2</title>
+</head>
+
+<body>
+	<form>
+		<table>
+			<tr bgcolor="#58FAF4">
+				<td>
+					<h3>Event Planner</h3>
+				</td>
+				<td>
+					<select>
+						<option value="More_actions"> More Actions</option>
+						<option value="First_action">First Action</option>
+						<option value="Second_action">Second Action</option>
+					</select>
+				</td>
+				<td> </td>
+				<td> </td>
+			</tr>
+			<tr>
+				<td><b>Event name</b></td>
+				<td><input type="text" name="Event_name"></td>
+				<td rowspan="1"><b>Requirements</b></td>
+				<td rowspan="1"><input type="checkbox" name="Staffing">Staffing<br><input type="checkbox" name="Cattering">Cattering<br><input type="checkbox" name="Security">Security</td>
+			</tr>
+			<tr>
+				<td><b>Event Coordinator</b></td>
+				<td><input type="text" name="Event_coordinator"></td>
+				<td> </td>
+			</tr>
+			<tr>
+				<td><b>Email</b></td>
+				<td><input type="email" name="email"></td>
+				<td><b>Event Start Date</b></td>
+				<td><input type="date" name="Event_start_date"></td>
+			</tr>
+			<tr>
+				<td><b>Event Type</b></td>
+				<td>
+					<select>
+						<option value="Concert">Concert</option>
+						<option value="Theatre">Theatre</option>
+						<option value="Movie">Movie</option>
+					</select>
+				<td><b>Event End Date</b></td>
+				<td><input type="date" name="Event_end_date"></td>
+			</tr>
+			<tr>
+				<td><b>Total Members</b></td>
+				<td>
+					<select>
+						<option value="select">-Select-</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+					</select>
+				</td>
+				<td rowspan="1"><b>Location</b></td>
+				<td rowspan="1"><textarea name="location" rows="10" cols="20"></textarea></td>
+			<tr>
+				<td rowspan="2"><b>Event description</b></td>
+				<td rowspan="2"><textarea name="Event_description" rows="10" cols="20"></textarea></td>
+				<td> </td>
+				<td> </td>
+
+			</tr>
+			<tr>
+				<td><b>City</b></td>
+				<td><input type="text" name="City"></td>
+			</tr>
+			<tr>
+				<td> </td>
+				<td> </td>
+				<td><b>State</b></td>
+				<td>
+					<select>
+						<option value="select">-Select-</option>
+						<option value="Minesota">Minesota</option>
+						<option value="Florida">Florida</option>
+						<option value="California">California</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><b>Does your program<br>involve any type of<br>outside activity?</b></td>
+				<td>
+					<input type="radio" name="outside_activity" value="yes" checked>Yes<br>
+					<input type="radio" name="outside_activity" value="no">No<br>
+				</td>
+				<td><b>Country</b></td>
+				<td>
+					<select>
+						<option value="select">-Select-</option>
+						<option value="USA">USA</option>
+						<option value="Spain">Spain</option>
+						<option value="France">France</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><b>Cost Per Person</b></td>
+				<td><input type="text" name="Cost">USD</td>
+				<td><b>ATTACH<br>DETAILED<br>ITINERARY</b></td>
+				<td><input type="search" name="busqueda"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+
+</html>

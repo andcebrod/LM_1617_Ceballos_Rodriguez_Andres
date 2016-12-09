@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise 1</title>
+</head>
+<body>
+<form>
+	<table>
+		<tr>
+			<td><b>Title:*</b></td>
+			<td><b>Short Title:*</b></td>
+			<td><b>Subj.:</b></td>
+			<td><b>Num.:</b></td>
+			<td><b>Section:</b></td>
+			<td><b>Year</b></td>
+		</tr>
+		<tr>
+			<td><input type="text" name="Title" size="50"></td>
+			<td><input type="text" name="short_title" size="20"></td>
+			<td><font size="1"> BLST</font></td>
+			<td><input type="text" name="Num" size="3"></td>
+			<td><input type="text" name="Section" size="3"></td>
+			<td><font size="1">0910</font></td>
+		</tr>
+	</table>
+	<table>
+		<tr bgcolor="#E6E6E6">
+			<td><input type="checkbox" name="enrollment_limit"></td>
+			<td>Enrrollment<br>limit</td>
+			<td><b>Num.:</b><br><input type="text" name="num" size="2"></td>
+			<td><b>Rationale</b><br><input type="text" name="Rationale" size="60"></td>
+			<td rowspan="4"><b>Class<br>Meetings/Week:</b><br><input type="number" name="class_meetings" size="3">
+			<br><b>Class<br>Hours/Week:</b><br><input type="number" name="class_hours" size="3">
+			<br><b>Semester(s) Offered</b>
+				<br><select>
+					<option value="None">-None-</option>
+					<option value="First_Semester">First Semester</option>
+					<option value="Second_Semester">Second Semester</option>
+				</select>
+				<br><input type="checkbox" name="Semester">Incl. semester in prereqs
+				<br><input type="checkbox" name="once">Offered only once
+				<br><input type="checkbox" name="catalog">Incl. in printed catalog
+			</td>
+			<td rowspan="5">Keywords:
+				<br><input type="checkbox" name="science">Science for non-majors
+				<br><input type="checkbox" name="science">Fine arts for non-majors
+				<br><input type="checkbox" name="science">Lab science course
+				<br><input type="checkbox" name="science">Artistic Practice
+				<br><input type="checkbox" name="science">Foreing languaje/culture taught in English
+				<br><input type="checkbox" name="science">Community based learning
+				<br><input type="checkbox" name="science">Writting attentive
+				<br><input type="checkbox" name="science">Writting intensive
+			</td>
+		</tr>
+		<tr bgcolor="#D8D8D8">
+			<td><input type="checkbox" name="consent_required"></td>
+			<td>Consent<br>required</td>
+			<td> </td>
+			<td><b>Rationale</b><br><input type="text" name="Rationale" size="60"></td>
+		</tr>
+		<tr bgcolor="#E6E6E6">
+			<td><input type="checkbox" name="consent_required"></td>
+			<td>Limit class<br>Level</td>
+			<td><b>Code:</b><br><input type="text" name="num" size="2"></td>
+			<td rowspan="1"><b>Rationale</b><br><input type="text" name="Rationale" size="60">
+			<br><b>How to handle over-enrollment</b><br><input type="text" name="handle" size="60"></td>
+		</tr>
+		<tr bgcolor="#D8D8D8">
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td rowspan="3">
+				<b>Rationale</b><br><input type="text" name="Rationale" size="60">
+				<br><b>Required Prereqs. (major, course):</b><br><input type="text" name="prereqs_required" size="60">
+				<br><b>Recommended Prereqs.:</b><br><input type="text" name="prereqs_recommended" size="60">
+			</td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<td><b>Approvals</b></td>
+			<td></td>
+			<td><b>Date</b></td>
+			<td></td>
+			<td><b>Comment</b></td>
+		</tr>
+		<tr>
+			<td><input type="checkbox" name="cep"></td>
+			<td>CEP</td>
+			<td><img src="http://miniaturasjm.com/userdata/image/xcruces_013.jpg.pagespeed.ic.XhlFaZtG2g.jpg" width="20" height="16"></td>
+			<td><input type="text" name="Date"></td>
+			<td><img src="http://miniaturasjm.com/userdata/image/xcruces_013.jpg.pagespeed.ic.XhlFaZtG2g.jpg" width="20" height="16"></td>
+			<td><input type="text" name="comment" size="60"></td>
+
+		</tr>
+		<tr>
+			<td><input type="checkbox" name="Committee_of_six"></td>
+			<td>Committee of Six</td>
+			<td><img src="http://miniaturasjm.com/userdata/image/xcruces_013.jpg.pagespeed.ic.XhlFaZtG2g.jpg" width="20" height="16"></td>
+			<td><input type="text" name="Date"></td>
+			<td><img src="http://miniaturasjm.com/userdata/image/xcruces_013.jpg.pagespeed.ic.XhlFaZtG2g.jpg" width="20" height="16"></td>
+			<td><input type="text" name="comment" size="60"></td>
+		</tr>
+		<tr>
+			<td><input type="checkbox" name="Faculty"></td>
+			<td>Faculty</td>
+			<td><img src="http://miniaturasjm.com/userdata/image/xcruces_013.jpg.pagespeed.ic.XhlFaZtG2g.jpg" width="20" height="16"></td>
+			<td><input type="text" name="Date"></td>
+			<td><img src="http://miniaturasjm.com/userdata/image/xcruces_013.jpg.pagespeed.ic.XhlFaZtG2g.jpg" width="20" height="16"></td>
+			<td><input type="text" name="comment" size="60"></td>
+
+		</tr>
+	</table>
+</form>
+</body>
+</html>
