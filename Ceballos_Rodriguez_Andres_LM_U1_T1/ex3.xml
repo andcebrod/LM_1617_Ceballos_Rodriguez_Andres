@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UFT-8"?>
+<cookbook name="Libro de recetas del Tito">
+  <recipe_1 name="Spaguettis a lo Lebron">
+    <ingredients>
+     <ingredient>Tomate frito triturado al gusto</ingredient>
+     <ingredient>100g de Spaguettis </ingredient>
+     <ingredient>50g de Carne Picada</ingredient>
+    </ingredients>
+    <steps>
+     <step_1>Cocinar a fuego lento la carne en una sarten</step_1>
+     <step_2>Añadir el tomate y remover durante 20 min</step_2>
+     <step_3>Poner agua a hervir y añadir los spaguettis</step_3>
+     <step_4>Escurrir los spaguettis</step_4>
+     <step_5>Añadirlos al tomate y listo</step_5>
+    </steps>
+  </recipe_1>
+  <recipe_2 name="Filetes de Ternera a la barbacoa y patatas de Irving">
+   <ingredients>
+    <ingredient>200g de ternera fileteada</ingredient>
+    <ingredient>Salsa de barbacoa</ingredient>
+    <ingredient>2 patatas</ingredient>
+   </ingredients>
+   <steps>
+    <step_1>Calentar una sarten con aceite de oliva</step_1>
+    <step_2>Añadir el filete o los filetes</step_2>
+    <step_3>Cuando se vaya haciendo el filete añadir la salsa</step_3>
+    <step_4>Pelar las patatas y freirlas o al vapor</step_4>
+    <step_5>Emplatar y listo</step_5>
+   </steps>
+  </recipe_2>
+</cookbook>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UFT-8"?>
+<bus name="N1" type="nocturne" schedule="1:00-2:00 am" route="Triana-San Bernardo">
+  <stops>
+   <first_stop name="San Jacinto" number="1"
+     hour="1:00" periode="am"></first_stop>
+   <second_stop name="San Jacinto" number="2"
+     hour="1:10" periode="am"></second_stop>
+   <third_stop name="Puerta de Jerez" number="1"
+     hour="1:25" periode="am"></third_stop>
+   <fourth_stop name="Carlos V" number="1"
+     hour="1:30" periode="am"></fourth_stop>
+   <fifth_stop name="Prado San Sebastián" number="1"
+     hour="1:40" periode="am"></fifth_stop>
+   <sixth_stop name="Enrramadilla" number="1"
+     hour="1:45" periode="am"></sixth_stop>
+   <seven_stop name="San Bernardo" number="1"
+     hour="1:50" periode="am"></seven_stop>
+  </stops>
+</bus>
