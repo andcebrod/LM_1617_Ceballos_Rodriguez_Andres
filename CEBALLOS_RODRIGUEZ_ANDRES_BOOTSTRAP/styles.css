@@ -1,0 +1,43 @@
+* {
+font-family: 'Playfair Display', serif;
+font-family: 'Open Sans', sans-serif;
+}
+#header {
+  background-color: #46b7e2;
+}
+#imghead {
+  margin-left: 48%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+#first {
+  background-color: #46b7e2;
+}
+#span {
+  color: white;
+  font-size: 20px
+}
+#span2 {
+  color: white;
+  font-size: 40px
+}
+#button {
+  background-color: #2996cc;
+  color: #fff;
+  display: inline-block;
+  border-radius: 3%;
+  letter-spacing: 1px;
+  font-size: 15px;
+  text-align: center;
+  min-width: 60%;
+  max-width: 90%;
+  min-height: 40%;
+  max-height: 60%;
+  border: none;
+}
+#tablet {
+  width: 100%;
+}
+#second {
+  text-align: center
+}
