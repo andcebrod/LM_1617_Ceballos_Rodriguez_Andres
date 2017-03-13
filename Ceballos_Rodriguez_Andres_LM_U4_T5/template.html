@@ -1,0 +1,60 @@
+<!--
+    Author: Andrés Ceballos Rodríguez
+    E-mail: acrmontellano@gmail.com
+    Description: jQuery Exercises
+    Date: February 2017
+    Reference: http://api.jquery.com/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Template</title>
+	<link rel="stylesheet" href="style.css">
+	<!-- Loading jQUery Script -->
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+<div class="container">
+	<div class="izquierda"><img class="arrow" id="lefta" src="left.png"/></div>
+	<div class="centro">
+		<div class="img visible img1" >
+			<img src="pizjuan.jpg" class="imag" />
+		</div>
+		<div class="img img1" >
+			<img src="rosaleda.jpg" class="imag" />
+		</div>
+		<div class="img img1" >
+			<img src="carranza.jpg" class="imag" />
+		</div>
+		<div class="img img1" >
+			<img src="villamarin.jpg" class="imag" />
+		</div>
+	</div>
+	<div class="derecha"><img class="arrow" id="righta" src="right.png"/></div>
+
+</div>
+
+	<script>
+	  //Function executed when the HTML document is Ready (full loaded)
+	  $(function() {
+			$("#righta").click(function(){
+				if($(".visible").next().length!=0){
+				$(".visible").removeClass("visible").animate({"opacity": "0"},800).
+				next().addClass("visible").animate({"opacity": "1"},800);
+				}
+			});
+			$("#lefta").click(function(){
+				if($(".visible").prev().length!=0){
+				$(".visible").removeClass("visible").animate({"opacity": "0"},800).
+				prev().addClass("visible").animate({"opacity": "1"},800);
+				}
+			});
+});
+	</script>
+
+</body>
+</html>
