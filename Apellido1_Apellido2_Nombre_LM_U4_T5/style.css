@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  width: 90%;
+  overflow-y: auto;
+  margin-left: 5%;
+  border-radius: 5px;
+  background: url("fondo.jpg");
+}
+.izquierda {
+  height: 500px;
+  width: 20%;
+  float: left;
+  position: relative;
+}
+.derecha {
+  height: 500px;
+  width: 20%;
+  float: left;
+  position: relative;
+
+}
+.centro {
+  height: 500px;
+  width: 60%;
+  float: left;
+  position: relative;
+}
+.arrow {
+  width: 40px;
+  height: 40px;
+  margin-top: 90%;
+  margin-left: 40%;
+}
+.imag {
+  width: 684px;
+  height: 420px;
+  border-radius: 10px
+}
+.img1 {
+  position: absolute;
+  margin-top: 40px;
+}
+.img {
+  opacity: 0
+}
+.visible {
+  opacity: 1
+}

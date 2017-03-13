@@ -1,0 +1,109 @@
+<!--
+    Author: Andres Ceballos Rodriguez
+    E-mail: acrmontellano@gmail.com
+    Description: jQuery Exercises
+    Date: January 2017
+    Reference: http://api.jquery.com/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Template</title>
+	<!-- Loading jQUery Script -->
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<link href="styles.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="https://fonts.googleapis.com/css?family=Poppins|Roboto" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+	  <div class="bloque">
+	    <div class="titulo">
+	      <div class="title-image">
+	        <img src="game-logo.png" class="logo">
+	      </div>
+        <div class="title-text">
+          <span><h2>Juego de Tronos</h2></span>
+        </div>
+	    </div>
+      <div class="contenido">
+        <div class="contenido-image">
+          <img src="game-image.jpg" class="imagenc">
+        </div>
+        <div class="contenido-text">
+          <p> <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit, </b>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+	  </div>
+		<div class="bloque">
+			<div class="titulo">
+				<div class="title-image">
+					<img src="breakingbad-logo.png" class="logo">
+				</div>
+				<div class="title-text">
+					<span><h2>Breaking Bad</h2></span>
+				</div>
+			</div>
+			<div class="contenido">
+				<div class="contenido-image">
+					<img src="breakingbad-image.jpg" class="imagenc">
+				</div>
+				<div class="contenido-text">
+					<p> <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit, </b>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+		</div>
+		<div class="bloque">
+			<div class="titulo">
+				<div class="title-image">
+					<img src="strangerthings-logo.png" class="logo">
+				</div>
+				<div class="title-text">
+					<span><h2>Stranger Things</h2></span>
+				</div>
+			</div>
+			<div class="contenido">
+				<div class="contenido-image">
+					<img src="strangerthings-image.png" class="imagenc">
+				</div>
+				<div class="contenido-text">
+					<p> <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit, </b>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+		</div>
+		<div class="bloque">
+			<div class="titulo">
+				<div class="title-image">
+					<img src="walking-logo.png" class="logo">
+				</div>
+				<div class="title-text">
+					<span><h2>The Walking Dead</h2></span>
+				</div>
+			</div>
+			<div class="contenido">
+				<div class="contenido-image">
+					<img src="walking-image.png" class="imagenc"  >
+				</div>
+				<div class="contenido-text">
+					<p> <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit, </b>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script>
+	  //Function executed when the HTML document is Ready (full loaded)
+	  $(function() {
+			$(".container > div > div:nth-child(2)").hide();
+			$(".container > div > div:nth-child(1)").click(function(){
+					$(this).next().animate({
+						height: "toggle"}, 700);
+					})
+
+	  });
+	</script>
+
+</body>
+</html>

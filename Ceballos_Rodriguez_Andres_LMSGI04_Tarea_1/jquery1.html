@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>jQuery Exercises</title>
+	<link rel="stylesheet" href="jquery1.css">
+	<!-- Loading jQUery Script -->
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+	<!-- Titulo jquery -->
+
+	<h1>jQuery</h1>
+
+	<!-- Tabla de Horario -->
+	<table border="1px" class="table1">
+		<thead class="header">
+			<tr>
+				<th>HORA</th>
+				<th>LUNES</th>
+				<th>MARTES</th>
+				<th>MIERCOLES</th>
+				<th>JUEVES</th>
+				<th>VIERNES</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>8:15</td>
+				<td>LM</td>
+				<td>FOL</td>
+				<td>LM</td>
+				<td>PRE</td>
+				<td>GBD</td>
+			</tr>
+			<tr>
+				<td>9:15</td>
+				<td>LM</td>
+				<td>PRE</td>
+				<td>LM</td>
+				<td>PRE</td>
+				<td>GBD</td>
+			</tr>
+			<tr>
+				<td>10:15</td>
+				<td>FOL</td>
+				<td>PRE</td>
+				<td>FOL</td>
+				<td>PRE</td>
+				<td>GBD</td>
+			</tr>
+			<td>11:15</td>
+			<th colspan="5">RECREO</th>
+			<tr>
+				<td>11:45</td>
+				<td>GBD</td>
+				<td>ISO</td>
+				<td>ISO</td>
+				<td>ISO</td>
+				<td>FHW</td>
+			</tr>
+			<tr>
+				<td>12:45</td>
+				<td>GBD</td>
+				<td>ISO</td>
+				<td>ISO</td>
+				<td>ISO</td>
+				<td>FHW</td>
+			</tr>
+			<tr>
+				<td>13:45</td>
+				<td>GBD</td>
+				<td>ISO</td>
+				<td>ISO</td>
+				<td>ISO</td>
+				<td>FHW</td>
+			</tr>
+		</tbody>
+	</table>
+	<!--Tabla de alumnos -->
+	<table border="1px" class="table2">
+		<thead>
+			<tr>
+				<th>Nombre</th>
+				<th>Apellidos</th>
+				<th>DNI</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Luke</td>
+				<td>Skywalker</td>
+				<td>75637262P</td>
+			</tr>
+			<tr>
+				<td>Leia</td>
+				<td>Morgana</td>
+				<td>90759743A</td>
+			</tr>
+			<tr>
+				<td>Darth</td>
+				<td>Maul</td>
+				<td>87549854R</td>
+			</tr>
+			<tr>
+				<td>Yoda</td>
+				<td>Jedi</td>
+				<td>22345623Q</td>
+			</tr>
+			<tr>
+				<td>Darth</td>
+				<td>Sirius</td>
+				<td>63384648A</td>
+			</tr>
+			<tr>
+				<td>Anakin</td>
+				<td>Skywalker</td>
+				<td>76469023A</td>
+			</tr>
+			<tr>
+				<td>Pacme</td>
+				<td>Tatoinne</td>
+				<td>65237856Y</td>
+			</tr>
+			<tr>
+				<td>Jabba</td>
+				<td>El Hut</td>
+				<td>56895478A</td>
+			</tr>
+			<tr>
+				<td>Han</td>
+				<td>Solo</td>
+				<td>1246436Q</td>
+			</tr>
+		</tbody>
+	</table>
+	<p class="show">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p class="hide">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <p class="show">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p class="hide">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<script>
+		//Function executed when the HTML document is Ready (full loaded)
+		$(function() {
+			$("h1").addClass("title");
+			$(".header").css({"background-color": "red","color": "white"});
+			$(".table2 tr:odd").css("background-color", "grey");
+			$( ".table2 tr:even").css({"background-color": "grey", "color": "white"});
+			$("p[class!=show]").hide();
+		});
+	</script>
+
+</body>
+
+</html>

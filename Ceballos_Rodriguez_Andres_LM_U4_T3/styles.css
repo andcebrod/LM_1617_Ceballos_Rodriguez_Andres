@@ -1,0 +1,69 @@
+* {
+box-sizing: border-box;
+
+}
+
+.container {
+  position: absolute;
+  overflow-y: auto;
+  width: 80%;
+  background: url("fond.jpg");
+  left: 10%;
+  right: 10%;
+  border: 3px solid black;
+  border-radius: 5px
+}
+
+.bloque {
+  position: relative;
+}
+.titulo {
+  position: relative;
+  overflow-y: auto;
+
+
+}
+.title-image {
+  float: left;
+  width: 10%;
+  position: relative;
+  overflow-y: auto;
+  padding-bottom: 6px;
+}
+.logo {
+  width: 70px;
+  height: 70px;
+
+}
+.title-text {
+  float: left;
+  position: relative;
+  width: 90%;
+  font-family: 'Poppins', sans-serif;
+  overflow-y: auto;
+}
+.contenido {
+
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  height: 254px;
+}
+.contenido-image {
+  float: left;
+  width: 22%;
+  position: relative;
+  backg
+  overflow-y: auto;
+}
+.imagenc {
+  width: 150px;
+  height: 250px;
+  }
+.contenido-text {
+  float: left;
+  position: relative;
+  width: 78%;
+  font-family: 'Roboto', sans-serif;
+  overflow-y: auto;
+  height: 100%;
+}
